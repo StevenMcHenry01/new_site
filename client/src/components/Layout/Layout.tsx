@@ -1,6 +1,5 @@
 // 3rd party imports
 import React from 'react'
-import { PageProps } from 'gatsby'
 import 'normalize.css'
 import styled from 'styled-components'
 
@@ -12,9 +11,12 @@ import Typography from '../../styles/Typography'
 
 interface LayoutProps {}
 
-const ContentStyled = styled.div``
+const ContentStyled = styled.div`
+  max-width: var(--max-app-width);
+  margin: 0 auto;
+`
 
-export const Layout: React.FC<LayoutProps> = ({ children }: PageProps) => {
+export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <GlobalStyles />

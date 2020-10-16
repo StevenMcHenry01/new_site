@@ -1,13 +1,21 @@
 import { createGlobalStyle } from 'styled-components';
-import stripes from '../assets/images/stripes.svg';
 
 const GlobalStyles = createGlobalStyle`
   :root {
+    ${'' /* Colors */}
     --red: #FF4949;
-    --black: #2E2E2E;
+    --main: #93646E;
+    --black: #212121;
+    --off-black: #434242; 
     --yellow: #ffc600;
     --white: #fff;
-    --grey: #efefef;
+    --light-grey: #efefef;
+    --dark-grey: #707070;
+    --grey: #a8a8a8;
+    --background: #FFFCF7;
+
+    ${'' /* Sizing */}
+    --max-app-width: 1100px;
   }
 
   html {
@@ -16,6 +24,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-size: 2rem;
+    background-color: var(--background);
   }
 
   fieldset {
@@ -59,13 +68,6 @@ const GlobalStyles = createGlobalStyle`
     background-color: var(--red) ;
     border-radius: 6px;
     border: 3px solid var(--white);
-  }
-
-  hr {
-    border: 0;
-    height: 8px;
-    background-image: url(${stripes});
-    background-size: 1500px;
   }
 
   ul {

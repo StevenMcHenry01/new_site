@@ -7,7 +7,7 @@ const Typography = createGlobalStyle`
     src: url(${font});
   } */}
   html {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
     color: var(--black);
   }
   p, li {
@@ -17,6 +17,15 @@ const Typography = createGlobalStyle`
     font-weight: normal;
     margin: 0;
   }
+
+  h1 {
+    font-family: Silom;
+  }
+
+  h2 {
+    font-family: Politica;
+  }
+
   a {
     color: var(--black);
     text-decoration-color: var(--red);
